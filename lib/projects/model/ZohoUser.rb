@@ -3,7 +3,7 @@ module Projects
 	module Model
 		# * This class is used to make an object for User.
 
-		class User 
+		class ZohoUser 
 
 			private
 				attr_accessor :id, :name, :email, :role	

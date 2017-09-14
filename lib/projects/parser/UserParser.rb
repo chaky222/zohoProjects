@@ -3,7 +3,7 @@ module Projects
 	module Parser
 
 		require 'json'
-		require File.dirname(__FILE__).chomp("/projects/parser") + '/projects/model/User'
+		require File.dirname(__FILE__).chomp("/projects/parser") + '/projects/model/ZohoUser'
 
 		# * Parse the JSON response into respective objects.
 
@@ -41,7 +41,7 @@ module Projects
 			# * User object.
 
 			def jsonToUser(jsonObject)
-				user = User.new
+				user = ZohoUser.new
 
 				if jsonObject.has_key?("id")
 					user.setId(jsonObject["id"])
